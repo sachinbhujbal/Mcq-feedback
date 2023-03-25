@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Rarely"
-                android:id="@+id/rare"
+                android:id="@+id/rarely"
                 android:background="@drawable/round_btn"
                 android:layout_marginTop="20dp">
 

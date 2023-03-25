@@ -11,7 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button Next,Goback;
+    Button Next,Goback,Rarely,Sometimes,Often,Daily;
     ProgressBar progressBar;
 
     @Override
@@ -21,9 +21,38 @@ public class MainActivity extends AppCompatActivity {
         Next=findViewById(R.id.next);
         Goback=findViewById(R.id.goback);
         progressBar=findViewById(R.id.progressBar);
-//        progressBar.setProgress(30);
-//        progressBar.setMax(90);
 
+        Rarely=findViewById(R.id.rarely);
+        Sometimes=findViewById(R.id.sometimes);
+        Often=findViewById(R.id.often);
+        Daily=findViewById(R.id.daily);
+
+        Rarely.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Response Noted: Rarely ", Toast.LENGTH_SHORT).show();
+            }
+        });
+        Sometimes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Response Noted: Sometimes", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Often.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Response Noted: Often", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Daily.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Response Noted: Daily", Toast.LENGTH_SHORT).show();
+            }
+        });
             Next.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
